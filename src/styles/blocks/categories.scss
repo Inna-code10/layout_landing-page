@@ -6,6 +6,21 @@
     @include onTablet {
       row-gap: 56px;
     }
+
+    @include constentPaddingInline;
+  }
+
+  &__button {
+    background-color: #F98921;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+
+    /*@include hover(background-color, #FBAF85);*/
   }
 }
 
