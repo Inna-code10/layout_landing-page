@@ -1,21 +1,42 @@
 .about-us {
-  @include pageGrid;
+  &__photo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-  &__title {
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 40px;
-    line-height: 100%;
-    letter-spacing: 0px;
+  &__bg-color {
+    background-color: #FCFAEF;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
 
-    grid-column: 1/-1;
+  &__text {
+    @include pageGrid;
 
-    @include onTablet {
-      grid-column: 1/4;
-    }
+    &__title {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0px;
 
-    @include onDesktop {
-      grid-column: span 5;
+      grid-column: 1/-1;
+
+      @include onTablet {
+        grid-column: 1/4;
+      }
+
+      @include onDesktop {
+        grid-column: span 5;
+      }
     }
   }
 
@@ -36,15 +57,4 @@
       grid-column: span 5;
     }
   }
-
-  &__bg-color {
-    background-color: #FCFAEF;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
 }
-
