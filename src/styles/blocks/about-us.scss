@@ -19,8 +19,8 @@
   }
 
   &__text {
-    @include pageGrid;
-
+  @include pageGrid;
+  
     &__title {
       font-weight: 700;
       font-style: Bold;
