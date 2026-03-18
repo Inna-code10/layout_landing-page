@@ -14,6 +14,22 @@
 
   &--phone {
     background-image: url(../../images/icons/icon-phone2x.png);
+    position: relative;
+
+    @include onDesktop {
+      &::before {
+        content: url(../../images/icons/phone-number2x.png);
+        position: absolute;
+        opacity: 0;
+        top: 300px;
+      }
+
+      &:hover::before {
+        opacity: 1;
+        top: -56px;
+        right: 16px;
+      }
+    }
   }
 
   &--menu {
@@ -28,6 +44,7 @@
     background-image: url(../../images/icons/icon-close2x.png);
   }
 }
+
 
 
 
