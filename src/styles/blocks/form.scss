@@ -1,0 +1,39 @@
+.contact-us {
+  @include constentPaddingInline;
+
+  &__title {
+    padding: 64px 20px 48px 20px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+
+    @include onTablet {
+      padding: 120px 74px 56px 174px;
+      font-size: 40px;
+    }
+
+    @include onDesktop {
+      padding: 120px 120px 56px 642px;
+      font-size: 48px;
+    }
+  }
+
+  &__button {
+      padding-top: 32px;
+      padding-bottom: 48px;
+
+      @include button;
+    }
+
+  &__grid {
+    @include pageGrid;
+  }
+
+  &__form {
+    grid-column: span 2;
+    gap: 16px;
+  }
+
+
+}
