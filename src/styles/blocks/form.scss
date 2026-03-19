@@ -1,39 +1,111 @@
 .contact-us {
   @include constentPaddingInline;
 
-  &__title {
-    padding: 64px 20px 48px 20px;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 32px;
-    line-height: 100%;
-
-    @include onTablet {
-      padding: 120px 74px 56px 174px;
-      font-size: 40px;
-    }
-
-    @include onDesktop {
-      padding: 120px 120px 56px 642px;
-      font-size: 48px;
-    }
-  }
-
-  &__button {
-      padding-top: 32px;
-      padding-bottom: 48px;
-
-      @include button;
-    }
-
   &__grid {
     @include pageGrid;
   }
 
-  &__form {
-    grid-column: span 2;
-    gap: 16px;
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: $main-text-color;
+    padding-top: 64px;
+    padding-bottom: 48px;
+
+    grid-column: 1/-1;
+
+
+    @include onTablet {
+      grid-column: 1/6;
+      padding-top: 120px;
+      padding-bottom: 56px;
+      font-size: 40px;
+    }
+
+    @include onDesktop {
+      grid-column: span 6;
+      padding-top: 120px;
+      font-size: 48px;
+    }
   }
 
+  &__form {
 
+    input, textarea {
+      width: 100%;
+      padding: 14px 16px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-radius: 8px;
+      background-color: #F9F9F9;
+      color: #7E7E83;
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.15px;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color:#F9F9F9;
+        border: 1px solid #DBDBDB;
+        color: #1B2129;
+      }
+
+      &:focus {
+        background-color: #F9F9F9;
+        border: 2px solid #F98921;
+        outline: none;
+      }
+    }
+
+    display: grid;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: span 6;
+    }
+
+    @include onDesktop {
+      grid-column: span 6;
+      column-gap: 111px;
+    }
+  }
+
+  &__contact {
+    display: grid;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+    grid-column: span 6;
+    }
+
+    @include onDesktop {
+      grid-column: span 6;
+    }
+  }
+
+  &__button {
+    padding-top: 56px;
+    padding-bottom: 120px;
+    @include button;
+
+    @include onDesktop {
+      margin-right: auto;
+      width: 324px;
+      height: 56px;
+    }
+  }
 }
+
+
+
+
+
+
+
