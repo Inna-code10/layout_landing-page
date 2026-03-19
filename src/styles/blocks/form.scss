@@ -1,5 +1,7 @@
 .contact-us {
   @include constentPaddingInline;
+  max-width: 100%;
+  margin-inline: 0;
 
   &__grid {
     @include pageGrid;
@@ -50,6 +52,7 @@
       line-height: 140%;
       letter-spacing: 0.15px;
       transition: all 0.3s;
+      resize: none;
 
       &:hover {
         background-color:#F9F9F9;
@@ -72,33 +75,57 @@
     }
 
     @include onDesktop {
-      grid-column: span 6;
+      grid-column: 1/7;
       column-gap: 111px;
     }
   }
 
   &__contact {
+    span {
+      color: #9393A3;
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.15px;
+    }
+
+    p {
+      color: #191919;
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.15px;
+    }
+
     display: grid;
-    grid-column: 1 / -1;
+    grid-column: 1/-1;
 
     @include onTablet {
     grid-column: span 6;
     }
 
     @include onDesktop {
-      grid-column: span 6;
+      grid-column: 8/-1;
     }
   }
 
   &__button {
     padding-top: 56px;
     padding-bottom: 120px;
+    margin-bottom: 48px;
+
     @include button;
 
+    @include onTablet {
+      margin-bottom: 80px;
+    }
+
     @include onDesktop {
-      margin-right: auto;
-      width: 324px;
+      width: 498px;
       height: 56px;
+      margin-right: auto;
     }
   }
 }
