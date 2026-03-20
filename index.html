@@ -243,6 +243,7 @@
           <h2 class="section-title contact-us__title">Contact us</h2>
           <div class="contact-us__grid">
             <form
+              onsubmit="this.reset(); return false;"
               action="#"
               method="post"
               class="contact-us__form">
@@ -274,21 +275,30 @@
             <div class="contact-us__contact">
               <div class="contact-us__contact-block">
                 <span>Phone</span>
-                <p>+1 234 5555-55-55</p>
+                <div class="contact-us__link">
+                  <a href="tel:+123455555555">+1 234 5555-55-55</a>
+                </div>
               </div>
 
               <div class="contact-us__contact-block">
                 <span>Email</span>
-                <p>hello@nothing.com</p>
+                <div class="contact-us__link">
+                  <a href="mailto:hello@nothing.com">hello@nothing.com</a>
+                </div>
               </div>
 
               <div class="contact-us__contact-block">
                 <span>Address</span>
-                <p>
-                  400 first ave.<br>
-                  suite 700<br>
-                  Minneapolis, MN 55401
-                </p>
+                <div class="contact-us__link">
+                  <a
+                    href="https://maps.app.goo.gl/T8RacycHzpRjTKBN6"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    400 first ave.<br>
+                    suite 700<br>
+                    Minneapolis, MN 55401
+                  </a>
+                </div>
               </div>
             </div>
           </div>

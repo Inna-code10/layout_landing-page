@@ -34,6 +34,8 @@
 
   &__link {
     &--left {
+      @include hover(transform, scale(1.2));
+
       @include onTablet {
         grid-column: span 3;
       }
@@ -42,6 +44,8 @@
       }
     }
    &--right {
+      @include hover(transform, scale(1.2));
+
       @include onTablet {
         grid-column: span 3;
       }

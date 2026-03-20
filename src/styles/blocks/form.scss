@@ -1,4 +1,5 @@
 .contact-us {
+
   @include constentPaddingInline;
   max-width: 100%;
   margin-inline: 0;
@@ -81,6 +82,7 @@
   }
 
   &__contact {
+
     span {
       color: #9393A3;
       font-family: inherit;
@@ -88,15 +90,19 @@
       font-size: 14px;
       line-height: 140%;
       letter-spacing: 0.15px;
+      height: 20px;
+      padding-bottom: 8px;
     }
 
-    p {
+    a {
+      text-decoration: none;
       color: #191919;
       font-family: inherit;
       font-weight: 400;
       font-size: 16px;
       line-height: 140%;
       letter-spacing: 0.15px;
+      height: 22px;
     }
 
     display: grid;
@@ -129,6 +135,7 @@
     }
   }
 }
+
 
 
 

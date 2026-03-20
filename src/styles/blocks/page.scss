@@ -29,7 +29,11 @@
       pointer-events: all;
     }
   }
-}
+ }
+
+ .page:has(.page__menu:target) {
+   overflow: hidden;
+ }
 
 
 
