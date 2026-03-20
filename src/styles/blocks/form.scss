@@ -1,5 +1,4 @@
 .contact-us {
-
   @include constentPaddingInline;
   max-width: 100%;
   margin-inline: 0;
@@ -37,7 +36,6 @@
   }
 
   &__form {
-    margin-right: 111px;
 
     input, textarea {
       width: 100%;
@@ -85,9 +83,20 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    @include onDesktop {
+      grid-column: 8/-1;
+    }
   }
 
   &__contact-block {
+    display: grid;
+    grid-column: 1/-1;
+
+    @include onTablet {
+      grid-column: span 6;
+    }
+
     span {
         color: #9393A3;
         font-family: inherit;
@@ -109,17 +118,6 @@
       letter-spacing: 0.15px;
       height: 22px;
     }
-
-    display: grid;
-    grid-column: 1/-1;
-
-    @include onTablet {
-      grid-column: span 6;
-    }
-
-    @include onDesktop {
-      grid-column: 8/-1;
-    }
   }
 
   &__button {
@@ -134,7 +132,7 @@
     }
 
     @include onDesktop {
-      width: 498px;
+      width: 100%;
       height: 56px;
       margin-right: auto;
     }
