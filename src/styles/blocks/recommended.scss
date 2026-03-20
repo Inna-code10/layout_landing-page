@@ -3,6 +3,7 @@
     @include pageGrid;
     display: grid;
     row-gap: 40px;
+    cursor: pointer;
   }
 
   &__product {
