@@ -1,7 +1,10 @@
 .contact-us {
+  width: 100%;
+  padding-inline: 120px;
+
   @include constentPaddingInline;
-  max-width: 100%;
-  margin-inline: 0;
+  /**max-width: 100%;*/
+  margin-inline: auto;
 
   &__grid {
     @include pageGrid;
@@ -136,6 +139,13 @@
       height: 56px;
       margin-right: auto;
     }
+  }
+
+  &__link {
+    :hover {
+      color: #F98921;
+    }
+    @include hover(transform, scale(1.2));
   }
 }
 
