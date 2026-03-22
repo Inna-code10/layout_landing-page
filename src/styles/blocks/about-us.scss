@@ -6,6 +6,14 @@
     width: 100%;
     margin: 0;
     padding: 0;
+
+    @include onDesktop {
+      width: 100%;
+      height: 580px;
+      object-fit: cover;
+      overflow: hidden;
+      object-position: bottom;
+    }
   }
 
   &__bg-color {
